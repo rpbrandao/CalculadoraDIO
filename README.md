@@ -1,21 +1,37 @@
-## How to Run the `.sh` File
+# 🔢 Calculadora Python
 
-To execute the shell script (`.sh` file) included in this project, follow these steps:
+Calculadora científica de linha de comando e interface web interativa.
 
-1. **Give Execute Permission (if needed):**
-   ```bash
-   chmod +x your_script.sh
-   ```
-   Replace `your_script.sh` with the actual file name.
+## Funcionalidades
 
-2. **Run the Script:**
-   ```bash
-   ./your_script.sh
-   ```
-   Or, if the script requires a specific interpreter:
-   ```bash
-   bash your_script.sh
-   ```
-   Make sure you are in the correct directory or provide the full path to the script.
+| Operação | Exemplo |
+|----------|---------|
+| Aritméticas básicas | `2 + 3 * (4 - 1)` |
+| Potência | `2**10` ou `2^10` |
+| Divisão inteira / módulo | `17 // 3` · `17 % 3` |
+| Raiz quadrada / cúbica | `sqrt(144)` · `cbrt(27)` |
+| Logaritmos | `log(e)` · `log2(8)` · `log10(1000)` |
+| Trigonometria | `sin(pi/2)` · `cos(pi)` · `tan(pi/4)` |
+| Fatorial | `fatorial(10)` |
+| Constantes | `pi` · `e` · `tau` · `inf` |
+| Histórico | comando `historico` |
 
-> **Note:** Some scripts may require additional environment variables or dependencies. Refer to any comments at the top of the script for additional usage information.
+## Como usar
+
+```bash
+# Modo interativo
+python calculadora.py
+
+# Expressão direta
+python calculadora.py "sqrt(2) * pi"
+
+# Ajuda
+python calculadora.py --ajuda
+```
+
+## Testes
+
+```bash
+pip install pytest
+pytest tests/ -v
+```
